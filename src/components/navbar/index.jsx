@@ -1,36 +1,39 @@
+import Search from "../../assets/icons/search.svg";
+
 const Navbar = () => {
   return (
     <div className="border-b-2 border-[#EFEFEF]">
       <div className="container">
-        <nav className="flex items-center justify-between py-[20px]">
-          <div className="border-r-2 border-[#F4F4F4] pr-[100px]">
-            <p className="uppercase text-[#3D00B7] text-[24px] font-bold">
+        <nav className="flex items-center justify-between py-[1.25rem]">
+          <div className="border-r-2 border-[#F4F4F4] pr-[6.25rem]">
+            <p className="uppercase text-[#3D00B7] text-[1.5rem] font-integral font-bold">
               Nfters
             </p>
           </div>
           <div>
-            <ul className="text-[16px] font-medium flex gap-[40px]">
-              <li>Marketplace</li>
-              <li>Resource</li>
-              <li>About</li>
+            <ul className="text-[1rem] font-medium flex gap-[2.5rem]">
+              <li className="cursor-pointer">Marketplace</li>
+              <li className="cursor-pointer">Resource</li>
+              <li className="cursor-pointer">About</li>
             </ul>
           </div>
-          <div className="flex items-center gap-[20px] text-[14px]">
-            <input
-              type="text"
-              placeholder="Search"
-              className="placeholder:text-[#C0C0C0] w-[300px] h-[45px] rounded-full"
-            />
-            <button
-              type=""
-              className="bg-[#3D00B7] text-[#FFFFFF] w-[120px] h-[45px] rounded-full"
-            >
+          <div className="flex items-center gap-[1.25rem] text-[0.875rem]">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search"
+                className="placeholder:text-[#C0C0C0] placeholder:text-[1rem] placeholder:mb-[0.125rem] pl-[1.875rem] pr-[3.125rem] w-[18.75rem] h-[2.8rem] rounded-full"
+              />
+              <img
+                src={Search}
+                alt=""
+                className="absolute right-[1rem] top-[20%]"
+              />
+            </div>
+            <button type="" className="btn w-[7.5rem] h-[2.8rem]">
               Upload
             </button>
-            <button
-              type=""
-              className="text-[#3D00B7] border-2 border-[#3D00B7] w-[150px] h-[45px] rounded-full font-bold"
-            >
+            <button type="" className="btn-outlined w-[9.375rem] h-[2.8rem]">
               Connect Wallet
             </button>
           </div>

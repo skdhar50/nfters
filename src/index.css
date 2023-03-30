@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-[#3D00B7] text-[#FFFFFF] rounded-full font-medium;
+  }
+  .btn-outlined {
+    @apply text-[#4F33A3] border-[#3D00B7] rounded-full mx-auto font-medium border-2;
+  }
+}
+
+/* Self hosted fonts */
+@layer base {
+  @font-face {
+    font-family: "DM Sans";
+    font-weight: 400;
+    src: url("/public/fonts/woff2/DMSans-Regular.woff2") format("woff2"),
+      url("/public/fonts/woff/DMSans-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "DM Sans";
+    font-weight: 500;
+    src: url("/public/fonts/woff2/DMSans-Medium.woff2") format("woff2"),
+      url("/public/fonts/woff/DMSans-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "DM Sans";
+    font-weight: 700;
+    src: url("/public/fonts/woff2/DMSans-Bold.woff2") format("woff2"),
+      url("/public/fonts/woff/DMSans-Bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Integral";
+    font-weight: 400;
+    src: url("/public/fonts/woff2/integral-regular.woff2") format("woff2"),
+      url("/public/fonts/woff/integral-regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Integral";
+    font-weight: 500;
+    src: url("/public/fonts/woff2/integral-medium.woff2") format("woff2"),
+      url("/public/fonts/woff/integral-medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Integral";
+    font-weight: 700;
+    src: url("/public/fonts/woff2/integral-bold.woff2") format("woff2"),
+      url("/public/fonts/woff/integral-bold.woff") format("woff");
+  }
+}

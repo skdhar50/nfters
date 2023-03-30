@@ -7,6 +7,10 @@ module.exports = {
         center: true,
         padding: "7.5rem",
       },
+      fontFamily: {
+        sans: ["DM Sans", "sans-serif"],
+        integral: ["Integral", "sans-serif"],
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
