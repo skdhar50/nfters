@@ -4,7 +4,7 @@ import Linkedin from "../../assets/icons/linkedin.svg";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="xl:container px-[2rem]">
       <div className="grid grid-cols-3 gap-[1.25rem] py-[3.75rem]">
         <div className="space-y-[1.25rem]">
           <p className="uppercase text-[1.5rem] font-integral font-bold">
@@ -50,14 +50,15 @@ const Footer = () => {
             Join our mailing list to stay in the loop with our newest feature
             releases, NFT drops, and tips and tricks for navigating NFTs.
           </p>
-          <div>
+          <div className="relative">
             <input
               type="text"
-              name=""
-              value=""
               placeholder="Enter your email address.."
-              className="w-full rounded-full border-3 border-[#d3d3d3] h-[3.125rem] placeholder:text-[#959595] pl-[1.25rem] text-[0.8125rem]"
+              className="w-full rounded-full border-3 border-[#d3d3d3] h-[3.125rem] placeholder:text-[#959595] pl-[1.25rem] pr-[6.725rem] 2xl:pr-[9.375rem] text-[0.8125rem]"
             />
+            <button className="absolute bottom-1 right-1 bg-[#3D00B7] hover:bg-[#4500cf] duration-200 text-white rounded-full text-[0.675rem] w-[6rem] 2xl:text-[0.875rem] 2xl:w-[8.75rem] h-[2.7rem]">
+              Subscribe Now
+            </button>
           </div>
         </div>
       </div>

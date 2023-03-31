@@ -4,10 +4,10 @@
 
 @layer components {
   .btn {
-    @apply bg-[#3D00B7] text-[#FFFFFF] rounded-full font-medium;
+    @apply bg-[#3D00B7] text-white rounded-full font-medium hover:text-[#3D00B7] hover:border-2 hover:border-[#3D00B7] hover:bg-white duration-200;
   }
   .btn-outlined {
-    @apply text-[#4F33A3] border-[#3D00B7] rounded-full mx-auto font-medium border-2;
+    @apply text-[#3D00B7] border-[#3D00B7] rounded-full mx-auto font-medium border-2 hover:bg-[#3D00B7] hover:text-white duration-200;
   }
 }
 
